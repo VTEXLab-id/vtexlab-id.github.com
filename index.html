@@ -32,9 +32,10 @@
 					table='<tr>\
 						<td><a href="'+starredRepo[i].owner.url+'"><img src="'+starredRepo[i].owner.avatar_url+'" /></a></td>\
 						<td>\
-							<h4><a href="'+starredRepo[i].html_url+'">'+starredRepo[i].name+'</a></h4>\
-							<p><em>'+starredRepo[i].description+'</em></p>\
+							<h3><a href="'+starredRepo[i].html_url+'">'+starredRepo[i].name+'</a></h3>\
+							<em>'+starredRepo[i].description+'</em>\
 							<pre><code>$git clone '+starredRepo[i].clone_url+'</code></pre>\
+							<a href="'+starredRepo[i].owner.avatar_url+'">'+starredRepo[i].owner.avatar_url+'</a>\
 						</td>\
 					</tr>';
 				}
@@ -47,6 +48,7 @@
 			#repos th{font-weight:bold;}
 			#repos img{max-width:40px;}
 			#repos td{vertical-align:middle;}
+			em{font-style:italic;}
 		</style>
 		
         <title>VTEX Lab - User Interface by VTEXLab-ui</title>
