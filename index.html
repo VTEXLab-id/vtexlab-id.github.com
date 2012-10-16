@@ -30,8 +30,12 @@
 				for(i=0;i<l;i++)
 				{
 					table='<tr>\
-						<td><img src="'+starredRepo[i].owner.avatar_url+'" alt="" /></td>\
-						<td>111</td>\
+						<td><a href="'+starredRepo[i].owner.url+'"><img src="'+starredRepo[i].owner.avatar_url+'" /></a></td>\
+						<td>\
+							<h4><a href="'+starredRepo[i].html_url+'">'+starredRepo[i]W.name+'</a></h4>\
+							<p><em>'+starredRepo[i].description+'</em></p>\
+							<pre><code>$git clone '+starredRepo[i].clone_url+'</code></pre>\
+						</td>\
 					</tr>';
 				}
 				
@@ -40,7 +44,9 @@
 		</script>
 		
 		<style type="text/css">
-			#repos img{max-width:70px;}
+			#repos th{font-weight:bold;}
+			#repos img{max-width:40px;}
+			#repos td{vertical-align:middle;}
 		</style>
 		
         <title>VTEX Lab - User Interface by VTEXLab-ui</title>
@@ -57,7 +63,7 @@
         <div id="content-wrapper">
             <div class="inner clearfix">
                 <section id="main-content">
-                    <h3>Nossos funcionalidades:</h3>
+                    <h3>Nossas funcionalidades:</h3>
 					<br />
 					<table id="repos">
 						<tbody>
