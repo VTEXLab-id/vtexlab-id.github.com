@@ -73,7 +73,7 @@ header {
 
 header h1 {
   letter-spacing: -1px;
-  font-size: 72px;
+  font-size: 59px;
   color: #fff;
   line-height: 1;
   margin-bottom: 0.2em;
@@ -85,7 +85,6 @@ header h2 {
   color: #9ddcff;
   font-weight: normal;
   line-height: 1.3;
-  width: 540px;
   letter-spacing: 0;
 }
 
