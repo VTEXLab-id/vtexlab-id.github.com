@@ -100,16 +100,14 @@ header h2 {
   padding-top: 30px;
 }
 
-#main-content {
-  width: 690px;
-  float: left;
-}
+#main-content {/* width: 690px; */float: left;}
 
 #main-content img {
   max-width: 100%;
 }
 
 aside#sidebar {
+display:none;
   width: 200px;
   padding-left: 20px;
   min-height: 504px;
